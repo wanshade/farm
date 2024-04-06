@@ -13,7 +13,7 @@ async function callRpcStarknet(url, count) {
     });
 
     console.log(
-      `StarkNet RPC has been called for ${++count} times – Latest Batch: ${JSON.stringify(
+      `StarkNet RPC sudah di request ${++count} kali – Latest Batch: ${JSON.stringify(
         data.result
       )}`.magenta
     );
