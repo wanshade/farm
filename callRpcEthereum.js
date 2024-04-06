@@ -13,7 +13,7 @@ async function callRpcEthereum(url, count) {
     });
 
     console.log(
-      `Ethereum RPC has been called for ${++count} times – ${JSON.stringify(
+      `Ethereum RPC sudah di request ${++count} kali – ${JSON.stringify(
         data
       )}`.green
     );
