@@ -14,7 +14,7 @@ async function callRpcNear(url, count) {
     });
 
     console.log(
-      `NEAR RPC has been called for ${++count} times – Block Height: ${JSON.stringify(
+      `NEAR RPC sudah di request ${++count} kali – Block Height: ${JSON.stringify(
         data.result.header.height
       )}`.cyan
     );
