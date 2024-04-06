@@ -13,7 +13,7 @@ async function callRpcAxelar(url, count) {
     });
 
     console.log(
-      `Axelar RPC has been called for ${++count} times – Latest Block: ${JSON.stringify(
+      `Axelar RPC sudah di request ${++count} kali – Latest Block: ${JSON.stringify(
         data.result.sync_info.latest_block_height
       )}`.blue
     );
