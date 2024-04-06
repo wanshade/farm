@@ -1,6 +1,6 @@
 const axios = require('axios');
 
-async function callRpcEthereum(url, count) {
+async function callRpcEthereum(url, method, params, count) {
   try {
     const { data } = await axios({
       method: 'POST',
@@ -8,7 +8,8 @@ async function callRpcEthereum(url, count) {
       data: {
         id: 1,
         jsonrpc: '2.0',
-        method: 'eth_gasPrice',
+        method: method,
+        params: params
       },
     });
 
