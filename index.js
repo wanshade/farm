@@ -19,13 +19,13 @@ function waitRandomSeconds(min, max) {
 }
 
 async function loopRPC() {
-  console.log('Choose your preferred blockchain:');
+  console.log('Pilih mau farm yang mana bosquee:');
   console.log('1. Ethereum');
   console.log('2. NEAR');
   console.log('3. StarkNet');
   console.log('4. Axelar');
 
-  const choice = readline.question('Enter your choice: ');
+  const choice = readline.question('pilih yang mana : ');
 
   let url;
   switch (choice) {
@@ -33,7 +33,7 @@ async function loopRPC() {
       url = ethereumRPCURL;
       while (true) {
         await callRpcEthereum(url, count++);
-        console.log(`Waiting for 5-20 seconds...`.yellow);
+        console.log(`sabar ya bosquee tunggu 5-20 detik...`.yellow);
         await waitRandomSeconds(5, 20);
       }
       break;
@@ -41,7 +41,7 @@ async function loopRPC() {
       url = nearRPCURL;
       while (true) {
         await callRpcNear(url, count++);
-        console.log(`Waiting for 5-20 seconds...`.yellow);
+        console.log(`sabar ya bosquee tunggu 5-20 detik`.yellow);
         await waitRandomSeconds(5, 20);
       }
       break;
@@ -49,7 +49,7 @@ async function loopRPC() {
       url = starknetRPCURL;
       while (true) {
         await callRpcStarkNet(url, count++);
-        console.log(`Waiting for 5-20 seconds...`.yellow);
+        console.log(`sabar ya bosquee tunggu 5-20 detik`.yellow);
         await waitRandomSeconds(5, 20);
       }
       break;
@@ -57,12 +57,12 @@ async function loopRPC() {
       url = axelarRPCURL;
       while (true) {
         await callRpcAxelar(url, count++);
-        console.log(`Waiting for 5-20 seconds...`.yellow);
+        console.log(`sabar ya bosquee tunggu 5-20 detik`.yellow);
         await waitRandomSeconds(5, 20);
       }
       break;
     default:
-      console.log('Invalid choice. Please choose 1, 2, 3, or 4.');
+      console.log('yang bener aja bosquee . pilih 1, 2, 3, or 4.');
   }
 }
 
