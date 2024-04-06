@@ -32,7 +32,9 @@ async function loopRPC() {
     case '1':
       url = ethereumRPCURL;
       while (true) {
-        await callRpcEthereum(url, count++);
+        await callRpcEthereum(url, 'eth_blockNumber', [], count++);
+        await callRpcEthereum(url, 'eth_gasPrice', [], count++);
+        await callRpcEthereum(url, 'eth_getBalance', [address, 'latest'], count++);
         console.log(`sabar ya bosquee tunggu 5-20 detik...`.yellow);
         await waitRandomSeconds(5, 20);
       }
