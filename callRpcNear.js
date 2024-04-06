@@ -7,7 +7,6 @@ async function callRpcNear(url, count) {
       url,
       data: {
         jsonrpc: '2.0',
-        id: 'wandaem',
         method: 'block',
         params: { finality: 'final' },
       },
