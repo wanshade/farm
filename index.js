@@ -6,7 +6,7 @@ const callRpcEthereum = require('./callRpcEthereum');
 const callRpcNear = require('./callRpcNear');
 const callRpcAxelar = require('./callRpcAxelar');
 const callRpcStarkNet = require('./callRpcStarknet');
-const address = '0x388C818CA8B9251b393131C08a736A67ccB19297'
+const address = '0x4838B106FCe9647Bdf1E7877BF73cE8B0BAD5f97'
 // Define RPC URLs
 const ethereumRPCURL = process.env.ETH_RPC_URL;
 const nearRPCURL = process.env.NEAR_RPC_URL;
